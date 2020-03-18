@@ -1,0 +1,32 @@
+{
+  "organizations": {
+    "_id": "<number>",
+    "sub_teams": "<Array>",
+    "employees": "<Array>"
+  },
+  "employees": {
+    "_id": "<number>",
+    "sub_teams": "<Array>",
+    "organizations": "<Array>"
+  },
+  "sub_teams": {
+    "_id": "<number>",
+    "employees": "<Array>",
+    "organizations": "<Array>"
+  },
+  "page": {
+    "_id": "<number>",
+    "content": "<number>",
+    "sections": "<Array>"
+  },
+  "section": {
+    "_id": "<number>",
+    "field1": "<>",
+    "field...": "<>"
+  },
+  "content": {
+    "_id": "<number>",
+    "sub_teams": "<Array>",
+    "employees": "<Array>"
+  }
+}

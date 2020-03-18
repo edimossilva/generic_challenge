@@ -1,5 +1,5 @@
 require 'set'
-class PQ
+class PriorityQueue
   def initialize
     @x = SortedSet.new
   end
@@ -24,7 +24,7 @@ class PQ
 end
 
 # Tests
-q = PQ.new
+q = PriorityQueue.new
 q.add(42, 21)
 q.add("a", 15)
 q.add(:dog, 37)

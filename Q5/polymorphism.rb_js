@@ -1,0 +1,19 @@
+
+polymorphic_array = []
+polymorphic_array.push(1)
+polymorphic_array.push("hello :)")
+polymorphic_array.push({ my_key:"my_value" })
+polymorphic_array.push([2, "hi ;)"])
+
+# here the each method doesn't care about with class the items have
+# all of them will be managed in the same way like their main parent "Object" (Prototype(js) and BasicObject(ruby))
+# in this example we suppose that their main parent "Object" has the methods .value() and .class()
+# so objects with classes like number, string, hash and array will assume the "Object" form at this moment
+polymorphic_array.each { |polymorphic_item|
+  console.puts "#{polymorphic_item.value()} is a #{polymorphic_item.class()}"
+}
+
+# extra info
+# ruby and js also are "duck typed", this means that they dont need a "Interface" like Java needs
+# duck type is good for flexibility during coding
+# duck type is bad because in some situations we only will got errors on runtime, some of these errors could be found by the compiler when using strongly typed languages  
